@@ -24,6 +24,4 @@ RUN apt-get update && \
 
 USER jetty
 
-COPY --from=builder /app/target/plantuml.war /var/lib/jetty/webapps/ROOT.war
-
-
+COPY --from=builder /app/target/plantuml.war /var/lib/jetty/webapps/plantuml.war
